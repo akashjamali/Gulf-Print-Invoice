@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('invoices', function (Blueprint $row) {
+            $row->id();
+            $row->string('invoice_no')->unique();
+            $row->string('client_name');
+            $row->text('client_address')->nullable();
+            $row->string('date');
+            $row->json('items');
+            $row->decimal('subtotal', 15, 2);
+            $row->decimal('tax', 15, 2)->default(0);
+            $row->decimal('total', 15, 2);
+            $row->string('currency')->default('Dhs');
+            $row->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('invoices');
+    }
+};
