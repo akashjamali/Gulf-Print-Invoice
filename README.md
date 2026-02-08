@@ -241,7 +241,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Akash Jamali**
 
 - GitHub: [@akashjamali](https://github.com/akashjamali)
-- Project Link: [https://github.com/akashjamali/invoice-generator](https://github.com/akashjamali/invoice-generator)
+- Project Link: https://github.com/akashjamali/Gulf-Print-Invoice
 
 ## 🙏 Acknowledgments
 
