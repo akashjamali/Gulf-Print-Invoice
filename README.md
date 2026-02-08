@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧾 Invoice Generator
 
 A modern, professional invoice and receipt generator with a beautiful React frontend and robust Laravel backend. Generate stunning PDF documents instantly with bilingual support (English/Arabic) and a sleek, responsive UI.
@@ -7,6 +8,10 @@ A modern, professional invoice and receipt generator with a beautiful React fron
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6.svg)
 ![Laravel](https://img.shields.io/badge/Laravel-10-FF2D20.svg)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff.svg)
+
+> [!NOTE]
+> **Demo Application**: All company information and data shown in this application are sample/demo data for demonstration purposes only. You can easily customize the company information for your own use.
+
 
 ## ✨ Features
 
@@ -180,14 +185,20 @@ Customize company details in `frontend/src/types/invoice.ts`:
 
 ```typescript
 export const COMPANY_INFO = {
-  name: "Your Company Name",
-  slogan: "Your Tagline Here",
-  phone: "+971 XX XXX XXXX",
-  email: "info@yourcompany.com",
-  address: "Your Business Address",
-  // ... more fields
+  name: "Sample Print Co.",
+  slogan: "Professional Printing & Design Services",
+  email: "info@sampleprintco.com",
+  website: "www.sampleprintco.com",
+  address: "Business Bay, Dubai, UAE",
+  // ... more fields - replace with your actual company information
 };
 ```
+
+**To customize for your business:**
+1. Open `frontend/src/types/invoice.ts`
+2. Replace all sample data with your actual company information
+3. Update logo and stamp images in the `public/images/` directory
+4. Modify the branding in `DashboardLayout.tsx` (company name in sidebar)
 
 ### Backend Configuration
 
@@ -242,5 +253,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Made with ❤️ for Gulf Print Systems
+  Made with ❤️ for professional printing businesses
 </p>
+=======
+# Gulf-Print-Invoice
+A modern invoice and receipt generator with React frontend and Laravel backend. Features bilingual PDF generation, dark mode, and responsive design.
+>>>>>>> 7234c6ee1a99b4031fabf0f2098fc05f7c8079eb
